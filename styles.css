@@ -1,7 +1,9 @@
 body {
-    background-image: url('imgggg.avif');
-    background-size: cover;
+    background-image: url("imggg.avif");
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -20,10 +22,10 @@ h1 {
     font-size: 36px;
     margin-bottom: 20px;
     color: rgb(255, 254, 255);
-    font-family: cursive;
+    font-family: "Orbitron", sans-serif; /* Use Orbitron font for h1 */
 }
 
-form {
+form {color: #6e6565;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,16 +33,18 @@ form {
 
 .input-field {
     padding: 12px 20px;
-    width: 250px;
+    width: 200px;
     border: 2px solid #2b2c2c;
     border-radius: 25px;
     font-size: 16px;
     margin-bottom: 20px;
     transition: border 0.3s ease;
+    color: #6e6565;
 }
 
 input[type="text"]::placeholder {
     color: #6e6565;
+    size: 10;
 }
 
 .button button {
@@ -58,4 +62,8 @@ input[type="text"]::placeholder {
 .button button:hover {
     background-color: #525355;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cosmosphere {
+    font-family: "Orbitron", sans-serif; 
 }
