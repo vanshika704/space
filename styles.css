@@ -1,11 +1,10 @@
 body {
-    background-image: url('imggg.avif');
+    background-image: url('imgggg.avif');
     background-size: cover;
     background-position: center;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-
 }
 
 .content {
@@ -20,6 +19,8 @@ body {
 h1 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: rgb(255, 254, 255);
+    font-family: cursive;
 }
 
 form {
@@ -29,28 +30,32 @@ form {
 }
 
 .input-field {
-    padding: 10px;
+    padding: 12px 20px;
     width: 250px;
-    border: none;
-    border-radius: 5px;
+    border: 2px solid #2b2c2c;
+    border-radius: 25px;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    transition: border 0.3s ease;
 }
 
 input[type="text"]::placeholder {
-    color: #ccc;
+    color: #6e6565;
 }
 
 .button button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     font-size: 18px;
-    background-color: #007bff;
-    color: white;
+    background-color: #525455;
+    color: rgb(51, 48, 48);
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .button button:hover {
-    background-color: #0056b3;
+    background-color: #525355;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
