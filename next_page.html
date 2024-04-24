@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <title>Shuttle</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('1. Atomic Structure Visualization.gif'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .column {
+            width: 30%; 
+            height: 100%;
+            background: transparent; 
+            cursor: pointer;
+        }
+
+        .left-column {
+            position: absolute;
+            left: 0;
+        }
+
+        .right-column {
+            position: absolute;
+            right: 0;
+            width: 50%;
+        }
+
+        .center-text {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-family: "Orbitron", sans-serif; 
+        }
+        .cosmosphere {
+            font-family: "Orbitron", sans-serif; 
+        }
+    </style>
+</head>
+<body>
+    <div class="column left-column" onclick="navigateToPage('left')">
+        
+    </div>
+    <div class="column right-column" onclick="navigateToPage('right')">
+        
+    </div>
+
+    <div class="center-text">
+        <h2>How Will You travel?</h2>
+        <h3>Just One Click!!</h3>
+    </div>
+
+    <!-- Your other HTML content here -->
+
+    <script>
+        function navigateToPage(direction) {
+            if (direction === 'left') {
+              
+                window.location.href = 'rockettakeoff.html'; // Replace 'left-page.html' with your left page URL
+            } else if (direction === 'right') {
+                
+                window.location.href = 'spaceshiptakeoff.html'; // Replace 'right-page.html' with your right page URL
+            }
+        }
+    </script>
+</body>
+</html>
